@@ -15,7 +15,7 @@ a {
     color: black;
 }
 
-/* Index Page */
+/* Header */
 
 header {
     height: 60vh;
@@ -39,4 +39,81 @@ nav ul li a {
 }
 
 
-/* About Page */
+/* Main*/
+main {
+    height: 200vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 4px;
+    position: relative;
+    background-color: white;
+    top: -100px;
+    text-align: center;
+
+}
+
+.body-header {
+    padding: 0 40px;
+}
+
+.body-header img {
+    position: relative;
+    top: -20px;
+}
+
+.body-header h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+
+}
+
+.body-header  p{
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+    font-size: .9rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.body-header-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-header-btn  button{
+    background-color: hsl(176, 72%, 28%);
+    border-radius: 40px;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.body-header-btn  button:nth-child(2){
+    color: hsl(176, 72%, 28%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 0 40px 40px 0 ;
+
+}
+
+.body-header-btn  button i {
+    position: absolute;
+    left: -30px;
+    padding: 10px;
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+    border-radius: 50%;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
