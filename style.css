@@ -1,0 +1,42 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Index Page */
+
+header {
+    height: 60vh;
+    background-image: url("images/image-hero-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 8vw;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+}
+
+
+/* About Page */
