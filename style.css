@@ -1,4 +1,4 @@
-/* Global styling */
+/* GLOBAL STYLING */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ a {
     color: black;
 }
 
-/* Header */
+/* HEADER */
 
 header {
     height: 60vh;
@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 3vw 8vw;
+    position: relative;
 }
 
 nav ul {
@@ -39,28 +40,37 @@ nav ul li a {
 }
 
 
-/* Main*/
+/* MAIN */
 main {
-    height: 200vh;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    box-shadow: 0 0 5px #888888;
-    border-radius: 4px;
     position: relative;
     background-color: white;
     top: -100px;
-    text-align: center;
-
 }
 
+.body-header,
+.body-numbers-div,
+.body-about,
+section .article
+{
+    padding: 40px;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* BODY HEADER */
+
 .body-header {
-    padding: 0 40px;
+    text-align: center;
 }
 
 .body-header img {
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: -35px;
+    width: fit-content;
 }
 
 .body-header h1 {
@@ -116,4 +126,65 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+
+/* BODY NUMBERS */
+
+.body-numbers {
+    display: flex;
+    text-align: center;
+    display: flex;
+}
+
+.body-numbers > div {
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    border-right: 2px solid #eee;
+}
+
+.body-numbers > div:first-child {
+    padding-left: 0;
+}
+
+.body-numbers > div:last-child {
+    border-right: none;
+}
+
+
+.body-numbers > div p {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+
+.body-numbers > div span {
+    color: hsl(0, 0%, 48%);
+    font-size: 0.8rem;
+    font-weight: 500;
+
+}
+
+.body-numbers-div .range {
+    height: 15px;
+    border-radius: 50px;
+    background-color: hsl(176, 72%, 28%);
+    margin: 20px 0 0;
+}
+
+
+/* BODY ABOUT */
+.body-about h2{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.body-about  p{
+    font-size: 1rem;
+    color: hsl(0, 0%, 48%);
+    margin: 30px 0;
+    line-height: 1.7rem;
+}
+
+
 
