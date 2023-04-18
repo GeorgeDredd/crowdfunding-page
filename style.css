@@ -15,6 +15,11 @@ a {
     color: black;
 }
 
+.container {
+    position: relative;
+    /* border: 50px solid red; */
+}
+
 /* HEADER */
 
 header {
@@ -48,6 +53,7 @@ main {
     position: relative;
     background-color: white;
     top: -100px;
+    z-index: 1;
 }
 
 .body-header,
@@ -168,10 +174,18 @@ section .article
 }
 
 .body-numbers-div .range {
-    height: 15px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #eee;
+    /* background-color: hsl(176, 72%, 28%); */
+    margin: 20px 0 0;
+}
+
+.body-numbers-div .range-value {
+    height: 100%;
+    width: 80%;
     border-radius: 50px;
     background-color: hsl(176, 72%, 28%);
-    margin: 20px 0 0;
 }
 
 
@@ -204,6 +218,7 @@ section .article {
     font-weight: 900;
     font-size: .9rem;
     color: hsl(176, 50%, 47%);
+    cursor: pointer;
 }
 
 .article .article-footer div {
@@ -218,11 +233,23 @@ section .article {
 }
 
 .article.blur{
-    filter: opacity(30%);
+    filter: opacity(50%);
 }
 
 article.blur .article-footer button {
     background-color: hsl(0, 0%, 48%);
+}
+
+
+/* Modal-Selected */
+.back-project-modal {
+    position: absolute;
+    top: 20px;
+    height: 50vh;
+    width: 300px;
+    margin: 0 auto;
+    background-color: red;
+    z-index: 2;
 }
 
 
