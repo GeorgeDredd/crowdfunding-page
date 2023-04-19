@@ -190,12 +190,16 @@ section .article
 
 
 /* BODY ABOUT */
-.body-about h2{
+.body-about h2, 
+.back-project-modal h2
+{
     font-size: 1.2rem;
     font-weight: 900;
 }
 
-.body-about p{
+.body-about p,
+.back-project-modal p
+{
     font-size: 1rem;
     color: hsl(0, 0%, 48%);
     margin: 30px 0;
@@ -214,9 +218,11 @@ section .article {
     align-items: center;
 }
 
-.article .article-head span {
+.article .article-head span,
+.back-project-options h3
+{
     font-weight: 900;
-    font-size: .9rem;
+    font-size: .8rem;
     color: hsl(176, 50%, 47%);
     cursor: pointer;
 }
@@ -242,17 +248,72 @@ article.blur .article-footer button {
 
 
 /* Modal-Selected */
-.back-project-modal {
+.modal-container {
     position: absolute;
-    top: 20px;
-    height: 50vh;
-    width: 300px;
-    margin: 0 auto;
-    background-color: red;
-    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.back-project-modal {
+    display: none;
+    /* position: fixed; */
+    border-radius: 20px;
+    padding: 30px;
+    height: 90vh;
+    width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 3px #888888;
+    z-index: 2;
+}
 
+.backdrop {
+    /* display: none; */
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
 
+.back-project-modal .back-project-header {
+    position: relative
+}
 
+.modal-close {
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+.modal-close i{
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer
+}
+
+.back-project-modal p {
+    margin: 10px 0;
+    font-size: .85em;
+}
+
+.back-project-options {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    padding: 20px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.back-project-options input[type=radio] {
+    height: 35px;
+    width: 35px;
+    
+}
