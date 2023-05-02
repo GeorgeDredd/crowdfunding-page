@@ -260,11 +260,11 @@ article.blur .article-footer button {
 
 
 .back-project-modal {
-    display: none;
+    /* display: none; */
     /* position: fixed; */
     border-radius: 20px;
     padding: 30px;
-    height: 90vh;
+    min-height: 100vh;
     width: 600px;
     margin: 0 auto;
     background-color: white;
