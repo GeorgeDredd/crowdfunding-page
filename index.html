@@ -143,7 +143,7 @@
         </div>
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         <div class="back-project-options">
-           <input type="radio" name="" id="">
+           <input type="radio"  name="back-project" id="" value="no-reward">
            <div>
              <h3>Pledge with no reward</h3>
              <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
@@ -152,30 +152,34 @@
         </div>
   
        <!-- Selected pledge start -->
-        <div class="back-project-options select">
-           <input type="radio" name="" id="">
-           <div>
-             <div>
-               <h3>Bamboo Stand</h3>
-               <span>Pledge $25 or more</span>
-               <div>101 <span>left</span></div>
-             </div>
-             <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-               you’ll be added to a special Backer member list.</p>
-           </div>
-           <hr>
-           <div>
-             <span>Enter your pledge</span>
-             <div>
-               <button>$25|</button>
-               <button>continue</button>
-             </div>    
-           </div>
+        <div class="back-project-options">
+          <input type="radio" name="back-project" id="" value="bamboo-stand">
+          <div class="select">
+            <div>
+              <div>
+                <h3>Bamboo Stand</h3>
+                <span>Pledge $25 or more</span>
+              </div>
+              <div class="modal-span">101 <span>left</span></div>
+            </div>
+            <div>
+              <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                you’ll be added to a special Backer member list.</p>
+            </div>
+            <hr>
+            <div>
+              <p>Enter your pledge</p>
+              <div class="modal-btn">
+                <button>$ <input type="number" id="pledge-amount" value="25"></button>
+                <button>continue</button>
+              </div>    
+            </div>
+          </div>
         </div>
         <!-- Selected pledge end -->
   
         <div class="back-project-options">
-           <input type="radio" name="" id="">
+           <input type="radio" name="back-project" id="" value="black-edition">
            <div>
              <div>
                <h3>Black Edition Stand</h3>
@@ -190,7 +194,7 @@
        </div>
   
        <div class="back-project-options">
-         <input type="radio" name="" id="">
+         <input type="radio" name="back-project" id="" value="mahagony">
          <div>
            <div>
              <h3>Mahogany Special Edition</h3>

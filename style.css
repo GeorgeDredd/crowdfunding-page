@@ -99,7 +99,8 @@ section .article
 }
 
 .body-header-btn  button,
-.article .article-footer button
+.article .article-footer button,
+.modal-btn button
 {
     background-color: hsl(176, 72%, 28%);
     border-radius: 40px;
@@ -185,7 +186,7 @@ section .article
     height: 100%;
     width: 80%;
     border-radius: 50px;
-    background-color: hsl(176, 72%, 28%);
+    background-color: hsl(176, 72%, 28%)
 }
 
 
@@ -219,7 +220,7 @@ section .article {
 }
 
 .article .article-head span,
-.back-project-options h3
+.back-project-options span
 {
     font-weight: 900;
     font-size: .8rem;
@@ -247,7 +248,7 @@ article.blur .article-footer button {
 }
 
 
-/* Modal-Selected */
+/* Modal-.selected */
 .modal-container {
     position: absolute;
     top: 0;
@@ -264,9 +265,9 @@ article.blur .article-footer button {
     /* position: fixed; */
     border-radius: 20px;
     padding: 30px;
-    min-height: 100vh;
+    height: 140vh;
     width: 600px;
-    margin: 0 auto;
+    margin: 200px auto;
     background-color: white;
     box-shadow: 0 0 3px #888888;
     z-index: 2;
@@ -294,12 +295,13 @@ article.blur .article-footer button {
 .modal-close i{
     font-size: 1.2rem;
     font-weight: 900;
-    cursor: pointer
+    cursor: pointer;
+    color: #888888;
 }
 
 .back-project-modal p {
     margin: 10px 0;
-    font-size: .85em;
+    font-size: .8em;
 }
 
 .back-project-options {
@@ -312,8 +314,61 @@ article.blur .article-footer button {
     margin: 15px 0;
 }
 
+.back-project-options .select{
+    flex-direction: column;
+}
+
+.back-project-options .select hr{
+    border: 1px solid #eeee;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.back-project-options .select > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .back-project-options input[type=radio] {
     height: 35px;
-    width: 35px;
-    
+    width: 35px;  
+    accent-color: hsl(176, 72%, 28%)
 }
+
+.back-project-options h3 {
+    font-weight: 900;
+    font-size: 1rem;
+    display: inline;
+    margin: 0 15px 0 0;
+}
+
+.modal-span{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.modal-span span {
+    color: hsl(0, 0%, 48%);
+    font-weight: lighter;
+}
+
+.modal-btn button{
+    display: inline;
+}
+
+.modal-btn button:nth-child(1) {
+    background-color: #ffffff;
+    outline: 1px solid hsl(176, 72%, 28%);
+    color: hsl(0, 0%, 48%);
+}
+
+#pledge-amount{
+    color: black !important;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-right: 2px solid hsl(176, 72%, 28%);
+    width: 45px;
+    text-align: right;
+}   
